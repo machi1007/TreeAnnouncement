@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>探險團隊</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8eff1;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        header, footer {
+            background: linear-gradient(135deg, #6b8ce8 0%, #7489e3 100%);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1, footer p {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        select {
+            display: block;
+            width: 300px;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            background-color: #f4f4f4;
+            font-size: 16px;
+        }
+
+        .content-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            color: #4a69bd;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            padding: 20px 0;
+            font-size: 0.8em;
+        }
+    </style>
+    <script>
+        function scrollToCourse() {
+            var course = document.getElementById("courseSelect").value;
+            document.getElementById(course).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>6114探險團隊</h1>
+            <select id="courseSelect" onchange="scrollToCourse()">
+                <option value="courseA">探險公告</option>
+                <option value="courseB">其他</option>
+
+            </select>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content-section" id="courseA">
+            <h2>🚢探險公告</h2>
+            <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/kk8czx5pcj2utdlp" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p><div style="display:flex;align-items:center;justify-content:end;margin:0;height:28px"><a href="https://padlet.com?ref=embed" style="display:block;flex-grow:0;margin:0;border:none;padding:0;text-decoration:none" target="_blank"><div style="display:flex;align-items:center;"><img src="https://padlet.net/embeds/made_with_padlet_2022.png" width="114" height="28" style="padding:0;margin:0;background:0 0;border:none;box-shadow:none" alt="Made with Padlet"></div></a></div></div>            
+              
+            <!-- 課程A的教學與學習成果內容 -->
+        </div>
+
+        <div class="content-section" id="courseB">
+            <h2>🚢其他</h2>
+                      
+            <!-- 課程B的教學與學習成果內容 -->
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <p>大樹 © 2024</p>
+    </footer>
+</body>
+</html>
